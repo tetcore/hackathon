@@ -1,0 +1,11 @@
+[package]
+name = "hackathon"
+version = "0.0.0"
+authors = ["Tetcoin Developers <support@tetcoin.org>"]
+edition = "2018"
+description = "Tetcore Hackathon"
+readme = "README.md"
+homepage = "https://core.tetcoin.org"
+license = "MIT"
+
+[dependencies]

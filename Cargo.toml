@@ -1,11 +1,32 @@
 [package]
 name = "hackathon"
-version = "0.0.0"
-authors = ["Tetcoin Developers <support@tetcoin.org>"]
-edition = "2018"
-description = "Tetcore Hackathon"
+version = "0.1.0"
+authors = ["Tetcore <support@tetcore.org>"]
+edition = "2021"
+description = "Tetcore Hackathon - Build AI-powered blockchain projects"
 readme = "README.md"
-homepage = "https://core.tetcoin.org"
+homepage = "https://tetcore.org"
 license = "MIT"
 
 [dependencies]
+tetcore-primitives = { path = "../tetcore/tetcore-primitives", version = "0.1.0" }
+tetcore-kernel = { path = "../tetcore/tetcore-kernel", version = "0.1.0" }
+tetcore-runtime = { path = "../tetcore/tetcore-runtime", version = "0.1.0" }
+tetcore-vm = { path = "../tetcore/tetcore-vm", version = "0.1.0" }
+
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+sha2 = "0.10"
+hex = "0.4"
+ed25519-dalek = { version = "2.0", features = ["serde", "rand_core"] }
+rand = "0.8"
+tokio = { version = "1.0", features = ["full"] }
+clap = { version = "4.0", features = ["derive"] }
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "hackathon"
+path = "src/main.rs"

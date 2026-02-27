@@ -6,6 +6,7 @@ edition = "2021"
 description = "Tetcore Hackathon - Build AI-powered blockchain projects"
 readme = "README.md"
 homepage = "https://tetcore.org"
+repository = "https://github.com/tetcore/hackathon"
 license = "MIT"
 
 [dependencies]
